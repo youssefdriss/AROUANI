@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dual Navbars Example</title>
+<link rel="stylesheet" href="arouani.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<!-- Toggle button for vertical navbar -->
+<div class="toggle-vertical" onclick="toggleVerticalNavbar()">Our products</div>
+
+<!-- Vertical Navbar -->
+<ul class="vertical-navbar" id="verticalNavbar">
+  <li><a href="#clothing" onclick="toggleVerticalColumn()">Clothing</a></li>
+  <li><a href="#jewellary">jewellary</a></li>
+  <li><a href="#hand bags">Handbags</a></li>
+</ul>
+
+<!-- Toggle button for horizontal navbar -->
+<div class="toggle-horizontal" onclick="toggleHorizontalNavbar()">//</div>
+
+<!-- Horizontal Navbar -->
+<div class="horizontal-navbar" id="horizontalNavbar">
+  <a href="#about">About us</a>
+  <a href="#instagram"><img src="./instagram.png" alt="instagram"></a>
+</div>
+<!-- Content Area -->
+<div class="content">
+  <h2>Content Area</h2>
+  <p>This is where your main content will go.</p>
+</div>
+
+<script src="arouani.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>

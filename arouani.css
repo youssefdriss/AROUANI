@@ -1,0 +1,124 @@
+/* Basic CSS for the vertical navbar */
+.vertical-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: #000000; /* Black background color */
+    border-right: 1px solid #ddd; /* Border on the right side */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    left: -200px; /* Initially hide the navbar */
+    height: 100%; /* Full height */
+    transition: left 0.3s; /* Smooth transition effect */
+    z-index: 2; /* Ensure it's above other content */
+    padding-top: 65px;
+  }
+  
+  .vertical-navbar.active {
+    left: 0; /* Show the navbar when active */
+  }
+  
+  .vertical-navbar li {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .vertical-navbar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff; /* White text color */
+  }
+  
+  .vertical-navbar li a:hover {
+    background-color: #000000; /* Darker background color on hover */
+  }
+  
+  /* Button to toggle the vertical navbar */
+  .toggle-vertical {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px; /* Larger font size for slashes */
+    color: #fff; /* White color for slashes */
+    cursor: pointer;
+    z-index: 999; /* Ensure it's above other content */
+    font-size: xx-large;
+  }
+  
+  /* Basic CSS for the horizontal navbar */
+  .horizontal-navbar {
+    background-color: #000000; /* Dark gray background color */
+    overflow: hidden;
+    z-index: 1; /* Ensure it's below vertical navbar */
+    padding-bottom: 30px;
+  }
+  
+  .horizontal-navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 200px; 
+    text-decoration: none;
+    font-size: xx-large;
+    padding-top: 30px;
+  }
+  
+  .horizontal-navbar a:hover {
+    background-color: #000000;
+  }
+  
+  /* Clear floats after the horizontal navbar */
+  .horizontal-navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Button to toggle the horizontal navbar */
+  .toggle-horizontal {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px; /* Larger font size for slashes */
+    color: #fff; /* White color for slashes */
+    cursor: pointer;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  /* Vertical column styles */
+  .vertical-column {
+    position: fixed;
+    top: 0;
+    left: 0; /* Stick to the left */
+    width: 200px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    z-index: 1; /* Above other content */
+  }
+  
+  .vertical-column h3 {
+    margin-top: 0;
+  }
+  
+  .vertical-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .vertical-column li {
+    margin-bottom: 10px;
+  }
+  
+  .vertical-column a {
+    color: #fff; /* White text color */
+    text-decoration: none;
+  }
+  
+  .vertical-column a:hover {
+    text-decoration: underline;
+  }
